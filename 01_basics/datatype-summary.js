@@ -1,4 +1,4 @@
-//  Primitive 
+//  Primitive (call by value)
 /*
 7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt(Scinetific value)
 
