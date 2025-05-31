@@ -27,3 +27,49 @@ console.log((booleanIsLoggedIn));
 let someNumber = 33;
 let stringToNumber = String(someNumber)
 console.log(typeof(stringToNumber));
+
+//****************** Operations **********************
+let value = 3
+let negValue = -value;
+console.log(negValue)
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2)
+console.log(2/2);
+console.log(2%2);
+
+let str1 = "hello"
+let str2 = " Rudra"
+
+let str3 = str1+str2
+console.log(str3)
+
+//first value is which type according to that we are seeing 
+console.log("1"+2)
+console.log(1+"2")
+console.log("1"+"2")
+console.log("1"+2+2)
+console.log(1+2+"2")
+
+console.log(3+4*5%3);
+
+
+console.log(true)
+console.log(+true)
+// console.log(true+) // error
+console.log(+"");
+
+let num1, num2, num3
+num1 = num2 = num3 = 2+2
+console.log(num1,num2,num3)
+
+let gameCounter = 100
+console.log("Before",gameCounter)
+++gameCounter;
+gameCounter++;
+console.log(gameCounter)
+
+
+
