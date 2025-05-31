@@ -1,4 +1,7 @@
-//  Primitive (call by value)
+//  Primitive (call by value) => gives copy of data 
+
+// const { use } = require("react");
+
 /*
 7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt(Scinetific value)
 
@@ -29,4 +32,28 @@ const myFunction = function(){
 }
 console.log(typeof bigNumber)
 console.log(typeof myFunction) //function object
+
+
+
+///+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// memory
+// Stack(Primitive) , Heap(Non-Primitive)
+
+let myYoutubename = "histeshChoudharydotcomt"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode";
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let user = {
+    email: "user@google.com",
+    upi: "user@bly",
+
+}
+let userTwo = user;
+userTwo.email="hitesh@google.com"
+console.log(user.email)
+console.log(userTwo.email)
 
