@@ -1,0 +1,37 @@
+* {
+    background-color: #212121;
+    text-align: center;
+    color: #ffff;
+    /* background: linear-gradient(to right, black, grey); */
+
+
+}
+
+
+input {
+    background-color: #ffffff;
+    color: #000;
+
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: double;
+    cursor: pointer;
+}
+
+#canvas {
+    margin: 100px auto;
+    width: fit-content;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    /* Optional */
+    /* background-color: rgba(255, 255, 255, 0.05); */
+}
+
+#result {
+    margin-top: 15px;
+    color: #00ffcc;
+}
