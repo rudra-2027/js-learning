@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+</head>
+<body>
+    <h1>Click Start And Stop the random color</h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+
+</body>
+<script>
+        let intervalId;
+        let randomColor;
+        const rndm = function(){
+            
+            const body = document.querySelector('body');
+            let r = Math.floor(Math.random()*255)
+            let g = Math.floor(Math.random()*255)
+            let b = Math.floor(Math.random()*255)
+            console.log("Hello");
+            randomColor = body.style.background = `rgb(${r},${g},${b})`;
+            
+        }
+
+        document.querySelector("#Start").addEventListener('click',function(e){
+            e.preventDefault() 
+             if (!intervalId) {
+                intervalId = setInterval(rndm, 1000);
+            }
+        })
+        document.querySelector("#Stop").addEventListener('click',function(){
+            clearInterval(intervalId)
+            intervalId = null;
+            console.log(rndm);
+            
+            console.log("Stopped");
+            
+        })
+</script>
+</html>
